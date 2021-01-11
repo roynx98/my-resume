@@ -1,0 +1,66 @@
+.header-profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin: 0 auto 0px auto;
+  position: relative;
+  right: 20px;
+}
+
+.header-container {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-profile-picture {
+    right: 0px;
+  }
+} 
+
+.header-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.header-summary-container {
+  flex: 2;
+}
+
+.header-info-container h1 {
+  margin: 0px 0 10px 20;
+}
+
+.header-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header-info-item p {
+  margin: 0;
+}
+
+.header-info-item img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.header-location-container img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.header-links-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-links-container a {
+  margin-left: 15px;
+}
+
+
