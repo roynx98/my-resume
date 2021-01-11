@@ -6,7 +6,8 @@ export const Header = () => {
     name: 'Roy Rodriguez',
     role: 'Full-Stack Developer',
     email: 'roynx98@gmail.com',
-    location: 'CDMX, Mexico'
+    location: 'CDMX, Mexico',
+    summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, js frameworks to backend services. Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely. See more in my Portfolio!'
   };
 
   return (
@@ -20,7 +21,7 @@ export const Header = () => {
           <h1>{data.name}</h1>
 
           <div className="header-info-item">
-            <img src="/imgs/id.svg"></img>
+            <img src="/imgs/star.svg"></img>
             <p>{data.role}</p>
           </div>
 
@@ -39,8 +40,7 @@ export const Header = () => {
 
       <div className="header-summary-container">
         <p>
-        I am a recent graduate from Cal State East Bay with an M.S. in Statistics with a data science concentrate. I have a solid background and practical knowledge in data analysis, statistical modeling, statistical analysis, data visualization, and machine learning. Seeking an entry position in the data scientist field to leverage skills and gain more practical work experience. Willing and able to work remotely.
-Check more on Portfolio!
+          {data.summary}
 
         <br />
 
