@@ -1,0 +1,40 @@
+.experience-item {
+  display: flex;
+  margin-top: 20px;
+}
+
+
+.experience-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; 
+}
+@media screen and (max-width: 900px) {
+  .experience-item {
+    flex-direction: column;
+  }
+
+  .experience-item img {
+    margin: 0 0 15px 0;
+  }
+
+  .experience-item-info {
+    margin-left: 0px !important;
+    margin-bottom: 10px;
+  }
+} 
+
+
+.experience-item-info {
+  width: 180px;
+  margin-left: 20px;
+}
+
+.experience-item-info * {
+  margin: 0 0 5px 0;
+}
+
+.experience-item-points {
+  flex: 1;
+  margin-top: -15px;
+}

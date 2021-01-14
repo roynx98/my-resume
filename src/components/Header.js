@@ -7,7 +7,8 @@ export const Header = () => {
     role: 'Full-Stack Developer',
     email: 'roynx98@gmail.com',
     location: 'CDMX, Mexico',
-    summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, js frameworks to backend services. Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely. See more in my Portfolio!'
+    summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.',
+    summaryTwo: 'Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely. See more in my Portfolio!'
   };
 
   return (
@@ -17,21 +18,21 @@ export const Header = () => {
         <img 
           className="header-profile-picture"
           src="/imgs/picture.jpeg"
-          alt="Profile picure"></img>
+          alt=""></img>
           <h1>{data.name}</h1>
 
           <div className="header-info-item">
-            <img src="/imgs/star.svg"></img>
+            <img src="/imgs/star.svg" alt=""></img>
             <p>{data.role}</p>
           </div>
 
           <div className="header-info-item">
-            <img src="/imgs/email.svg"></img>
+            <img src="/imgs/email.svg" alt=""></img>
             <p>{data.email}</p>
           </div>
 
           <div className="header-info-item">
-            <img src="/imgs/pin.svg"></img>
+            <img src="/imgs/pin.svg" alt=""></img>
             <p>{data.location}</p>
           </div>
 
@@ -41,15 +42,11 @@ export const Header = () => {
       <div className="header-summary-container">
         <p>
           {data.summary}
-
-        <br />
-
-        <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
         </p>
-
-        <div>
-
-        </div>
+        <p>
+          {data.summaryTwo}
+        </p>
+        <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
 
         <div className="header-links-container">
           <a href="https://github.com/roynx98">

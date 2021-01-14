@@ -1,4 +1,5 @@
 import React from 'react';
+import { Experience } from './components/Experience';
 import { Header } from './components/Header';
 import './Resume.css';
 
@@ -7,6 +8,8 @@ export const Resume = () => {
     <div className="resume-container">
       <div style={{padding: "40px"}}>
         <Header />
+        <br />
+        <Experience />
       </div>
     </div>
   );

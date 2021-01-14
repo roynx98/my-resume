@@ -29,6 +29,8 @@
 
 .header-summary-container {
   flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-info-container h1 {
@@ -58,7 +60,10 @@
 .header-links-container {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
 }
+
 .header-links-container a {
   margin-left: 15px;
 }
