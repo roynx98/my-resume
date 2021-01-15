@@ -1,0 +1,27 @@
+.skills-section img {
+  width: 20px;
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+}
+
+.skills-item p {
+  margin-left: 10px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+} 
