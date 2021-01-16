@@ -22,7 +22,7 @@ export const Header = () => {
           <h1>{data.name}</h1>
 
           <div className="header-info-item">
-            <img src="/imgs/star.svg" alt=""></img>
+            <img src="imgs/star.svg" alt=""></img>
             <p>{data.role}</p>
           </div>
 
@@ -50,11 +50,11 @@ export const Header = () => {
 
         <div className="header-links-container">
           <a href="https://github.com/roynx98">
-            <img width="30px" src="/imgs/github.svg"></img>
+            <img width="30px" src="imgs/github.svg"></img>
           </a>
 
           <a href="https://www.linkedin.com/in/roy-rodriguez-7985a6172/">
-            <img width="30px" src="/imgs/linkedin.svg"></img>
+            <img width="30px" src="imgs/linkedin.svg"></img>
           </a>
         </div>
 
