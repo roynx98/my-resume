@@ -7,7 +7,7 @@ export const Experience = () => {
       img: '/imgs/ilsp.png',
       position: 'Mobile Developer Sr',
       company: 'ILSP',
-      period: 'Oct.2018 - Present',
+      period: 'Oct/2018 - Present',
       points: [
         'Developed and deployed a push notification newsletter app using Ionic and React.',
         'Build an app to measure the risk level of a route using React Native.',
@@ -19,7 +19,7 @@ export const Experience = () => {
       img: '/imgs/yogome.png',
       position: 'Game Developer Jr',
       company: 'Yogome',
-      period: 'Sep.2018 - Oct.2018',
+      period: 'Sep/2018 - Oct/2018',
       points: [
         'Build multiple game prototypes for the Epic Heroes of Knowledge platform with Corona SDK.'
       ]
@@ -27,7 +27,7 @@ export const Experience = () => {
   ];
   return (
     <div>
-      <h2>Experience</h2>
+      <h2>Work Experience</h2>
       <hr />
 
       {

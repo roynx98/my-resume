@@ -1,4 +1,5 @@
 import React from 'react';
+import { Education } from './components/Education';
 import { Experience } from './components/Experience';
 import { Header } from './components/Header';
 import { Skills } from './components/Skills';
@@ -15,6 +16,10 @@ export const Resume = () => {
 
         <br />
         <Skills />
+
+        <br />
+        <Education />
+
       </div>
     </div>
   );
