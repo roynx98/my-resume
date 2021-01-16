@@ -64,10 +64,3 @@ export const Header = () => {
   );
 };
 
-const LinksContainer = () => {
-
-  return (
-    <p>dklsaj</p>
-  );
-
-}
