@@ -3,7 +3,7 @@ import React from 'react';
 export const Education = () => {
   const data = [
     {
-      img: '/imgs/upa.jpeg',
+      img: 'imgs/upa.jpeg',
       position: 'Computer Systems Engineer',
       university: 'Universidad Politécnica de Aguascalientes',
       period: 'Oct/2014 - Sep/2018',

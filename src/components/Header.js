@@ -17,7 +17,7 @@ export const Header = () => {
       <div className="header-info-container">
         <img 
           className="header-profile-picture"
-          src="/imgs/picture.jpeg"
+          src="imgs/picture.jpeg"
           alt=""></img>
           <h1>{data.name}</h1>
 
@@ -27,12 +27,12 @@ export const Header = () => {
           </div>
 
           <div className="header-info-item">
-            <img src="/imgs/email.svg" alt=""></img>
+            <img src="imgs/email.svg" alt=""></img>
             <p>{data.email}</p>
           </div>
 
           <div className="header-info-item">
-            <img src="/imgs/pin.svg" alt=""></img>
+            <img src="imgs/pin.svg" alt=""></img>
             <p>{data.location}</p>
           </div>
 

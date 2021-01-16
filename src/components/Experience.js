@@ -4,7 +4,7 @@ import './Experience.css'
 export const Experience = () => {
   const data = [
     {
-      img: '/imgs/ilsp.png',
+      img: 'imgs/ilsp.png',
       position: 'Mobile Developer Sr',
       company: 'ILSP',
       period: 'Oct/2018 - Present',
@@ -16,7 +16,7 @@ export const Experience = () => {
       ]
     },
     {
-      img: '/imgs/yogome.png',
+      img: 'imgs/yogome.png',
       position: 'Game Developer Jr',
       company: 'Yogome',
       period: 'Sep/2018 - Oct/2018',
