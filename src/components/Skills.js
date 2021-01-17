@@ -46,9 +46,9 @@ export const Skills = () => {
       <div className="skills-container">
         {
           data.map((skill, i) => 
-            <div style={{flexGrow: 1}}>
+            <div key={i} style={{flexGrow: 1}}>
               <h3>{skill.title}</h3>
-              <div key={i} className="skills-section" style={{width: sizes[i]}}>
+              <div className="skills-section" style={{width: sizes[i]}}>
                 {
                   skill.items.map((item, j) => 
                     <div key={j} className="skills-item">

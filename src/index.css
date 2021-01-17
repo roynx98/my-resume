@@ -7,6 +7,9 @@ body {
   body {
     padding: 0;
   }
+  html {
+    background-color: white !important;
+  }
 } 
 
 @media print {
