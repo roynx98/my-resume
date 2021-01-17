@@ -2,6 +2,9 @@ import React from 'react';
 import './Skills.css'
 
 export const Skills = () => {
+  const sizes = [
+    120, 250, 100, 80
+  ];
   const data = [
     {
       title: 'Lenguages',
@@ -43,16 +46,18 @@ export const Skills = () => {
       <div className="skills-container">
         {
           data.map((skill, i) => 
-            <div key={i} className="skills-section">
+            <div style={{flexGrow: 1}}>
               <h3>{skill.title}</h3>
-              {
-                skill.items.map((item, j) => 
-                  <div key={j} className="skills-item">
-                    <img src={item.img}></img>
-                    <p>{item.name}</p>
-                  </div>
-                )
-              }
+              <div key={i} className="skills-section" style={{width: sizes[i]}}>
+                {
+                  skill.items.map((item, j) => 
+                    <div key={j} className="skills-item">
+                      <img src={item.img}></img>
+                      <p>{item.name}</p>
+                    </div>
+                  )
+                }
+              </div>
             </div>
           )
         }
