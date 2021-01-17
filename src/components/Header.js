@@ -56,6 +56,10 @@ export const Header = () => {
           <a href="https://www.linkedin.com/in/roy-rodriguez-7985a6172/">
             <img width="30px" src="imgs/linkedin.svg"></img>
           </a>
+
+          <a href="https://twitter.com/roynx98">
+            <img width="30px" src="imgs/twitter.svg"></img>
+          </a>
         </div>
 
       </div>
