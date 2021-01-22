@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import picture from './../imgs/picture.jpeg'
 
 export const Header = () => {
   const data = {
@@ -7,6 +8,7 @@ export const Header = () => {
     role: 'Full-Stack Developer',
     email: 'roynx98@gmail.com',
     location: 'CDMX, Mexico',
+    phoneNumber: '55 8613 7990',
     summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.',
     summaryTwo: 'Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely. See more in my Portfolio!'
   };
@@ -17,7 +19,7 @@ export const Header = () => {
       <div className="header-info-container">
         <img 
           className="header-profile-picture"
-          src="imgs/picture.jpeg"
+          src={picture}
           alt=""></img>
           <h1>{data.name}</h1>
 
@@ -36,6 +38,10 @@ export const Header = () => {
             <p>{data.location}</p>
           </div>
 
+          {/* <div className="header-info-item">
+            <img src="imgs/phone.svg" alt=""></img>
+            <p>{data.phoneNumber}</p>
+          </div> */}
 
       </div>
 

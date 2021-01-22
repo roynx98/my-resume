@@ -1,6 +1,8 @@
 import React from 'react';
 import './Experience.css'
 
+import upworkLogo from '../imgs/upwork.svg';
+
 export const Experience = () => {
   const data = [
     {
@@ -22,6 +24,16 @@ export const Experience = () => {
       period: 'Sep/2018 - Oct/2018',
       points: [
         'Build multiple game prototypes for the Epic Heroes of Knowledge platform with Corona SDK.'
+      ]
+    },
+    {
+      img: upworkLogo,
+      position: 'Freelancer',
+      company: 'Upwork/Indie',
+      period: 'Mar/2015 - Present',
+      points: [
+        'Developed a social network to sharing outfits using React Native for an australian customer.',
+        'Build several mobile games for iOS and Android platforms.',
       ]
     }
   ];
