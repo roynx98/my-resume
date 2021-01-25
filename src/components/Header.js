@@ -1,6 +1,9 @@
 import React from 'react';
 import './Header.css';
 import picture from './../imgs/picture.jpeg'
+import phoneLogo from '../imgs/phone.svg';
+
+const SHOW_PHONE = true;
 
 export const Header = () => {
   const data = {
@@ -38,10 +41,13 @@ export const Header = () => {
             <p>{data.location}</p>
           </div>
 
-          {/* <div className="header-info-item">
-            <img src="imgs/phone.svg" alt=""></img>
-            <p>{data.phoneNumber}</p>
-          </div> */}
+          {
+            SHOW_PHONE &&
+            <div className="header-info-item">
+              <img src={phoneLogo} alt=""></img>
+              <p>{data.phoneNumber}</p>
+            </div>
+          }
 
       </div>
 
