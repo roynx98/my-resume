@@ -8,3 +8,4 @@ Check it out [here](https://roynx98.github.io/resume/).
 - [ ] Use Styled components
 - [ ] Unit test
 - [ ] Create PWA
+- [ ] Dark Mode
