@@ -1,6 +1,8 @@
 import React from 'react';
 import './Skills.css'
 
+import ionicLogo from '../imgs/ionic.svg';
+
 export const Skills = () => {
   const sizes = [
     120, 250, 100, 80
@@ -21,6 +23,7 @@ export const Skills = () => {
         { name: 'Express', img: 'imgs/express.svg' },
         { name: 'Jest', img: 'imgs/jest.svg' },
         { name: 'React Native', img: 'imgs/reactNative.svg' },
+        { name: 'Ionic', img: ionicLogo },
       ]
     },
     {

@@ -3,7 +3,7 @@ import './Header.css';
 import picture from './../imgs/picture.jpeg'
 import phoneLogo from '../imgs/phone.svg';
 
-const SHOW_PHONE = true;
+const SHOW_PHONE = false;
 
 export const Header = () => {
   const data = {
