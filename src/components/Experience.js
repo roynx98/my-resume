@@ -1,20 +1,27 @@
 import React from 'react';
 import './Experience.css'
 
-import upworkLogo from '../imgs/upwork.svg';
-
 export const Experience = () => {
   const data = [
+    {
+      img: 'imgs/epam.png',
+      position: 'Senior Software Engineer',
+      company: 'Emap',
+      period: 'Feb/2021 - Present',
+      points: [
+        'Implement ad-related solutions on the Wall Street Journal site.',
+        'Build new features on using JS and React for Dow Jones.',
+      ]
+    },
     {
       img: 'imgs/ilsp.png',
       position: 'Mobile Developer Sr',
       company: 'ILSP',
-      period: 'Oct/2018 - Present',
+      period: 'Oct/2018 - Feb/2021',
       points: [
         'Developed and deployed a push notification newsletter app using Ionic and React.',
         'Build an app to measure the risk level of a route using React Native.',
         'Implement an API rest to store GPS coordinates used by more 5,000 daily users.',
-        'Created a dashboard to manage GPS devices using Angular.',
       ]
     },
     {
@@ -26,16 +33,6 @@ export const Experience = () => {
         'Build multiple game prototypes for the Epic Heroes of Knowledge platform with Corona SDK.'
       ]
     },
-    {
-      img: upworkLogo,
-      position: 'Freelancer',
-      company: 'Upwork/Indie',
-      period: 'Mar/2015 - Present',
-      points: [
-        'Developed a social network to sharing outfits using React Native for an australian customer.',
-        'Build several mobile games for iOS and Android platforms.',
-      ]
-    }
   ];
   return (
     <div>
