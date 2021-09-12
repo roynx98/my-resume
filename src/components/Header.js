@@ -3,7 +3,8 @@ import './Header.css';
 import picture from './../imgs/picture.jpeg'
 import phoneLogo from '../imgs/phone.svg';
 
-const SHOW_PHONE = false;
+const SHOW_PHONE = true;
+const SHOW_LOCATION = false;
 
 export const Header = () => {
   const data = {
@@ -20,34 +21,37 @@ export const Header = () => {
     <div className="header-container">
 
       <div className="header-info-container">
-        <img 
+        <img
           className="header-profile-picture"
           src={picture}
           alt=""></img>
-          <h1>{data.name}</h1>
+        <h1>{data.name}</h1>
 
-          <div className="header-info-item">
-            <img src="imgs/star.svg" alt=""></img>
-            <p>{data.role}</p>
-          </div>
+        <div className="header-info-item">
+          <img src="imgs/star.svg" alt=""></img>
+          <p>{data.role}</p>
+        </div>
 
-          <div className="header-info-item">
-            <img src="imgs/email.svg" alt=""></img>
-            <p>{data.email}</p>
-          </div>
+        <div className="header-info-item">
+          <img src="imgs/email.svg" alt=""></img>
+          <p>{data.email}</p>
+        </div>
 
+        {
+          SHOW_LOCATION &&
           <div className="header-info-item">
             <img src="imgs/pin.svg" alt=""></img>
             <p>{data.location}</p>
           </div>
+        }
 
-          {
-            SHOW_PHONE &&
-            <div className="header-info-item">
-              <img src={phoneLogo} alt=""></img>
-              <p>{data.phoneNumber}</p>
-            </div>
-          }
+        {
+          SHOW_PHONE &&
+          <div className="header-info-item">
+            <img src={phoneLogo} alt=""></img>
+            <p>{data.phoneNumber}</p>
+          </div>
+        }
 
       </div>
 

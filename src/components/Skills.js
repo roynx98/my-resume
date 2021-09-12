@@ -12,8 +12,8 @@ export const Skills = () => {
       title: 'Lenguages',
       items: [
         { name: 'Javascript', img: 'imgs/js.svg'},
-        { name: 'HTML', img: 'imgs/html.svg'},
-        { name: 'CSS', img: 'imgs/css.svg'}
+        { name: 'Kotlin', img: 'imgs/kotlin.svg'},
+        { name: 'Swift', img: 'imgs/swift.svg'}
       ]
     },
     {
@@ -36,7 +36,8 @@ export const Skills = () => {
     {
       title: 'Tools',
       items: [
-        { name: 'Git', img: 'imgs/git.svg'}
+        { name: 'Git', img: 'imgs/git.svg'},
+        { name: 'Xcode', img: 'imgs/xcode.svg'},
       ]
     },
     
