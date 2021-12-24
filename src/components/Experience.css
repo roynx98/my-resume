@@ -38,3 +38,8 @@
   flex: 1;
   margin-top: -15px;
 }
+
+b {
+  font-weight: 700;
+  color: black;
+}

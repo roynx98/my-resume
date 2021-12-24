@@ -14,7 +14,7 @@ export const Header = () => {
     location: 'CDMX, Mexico',
     phoneNumber: '55 8613 7990',
     summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.',
-    summaryTwo: 'Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely. See more in my Portfolio!'
+    summaryTwo: 'Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely.'
   };
 
   return (
@@ -34,7 +34,8 @@ export const Header = () => {
 
         <div className="header-info-item">
           <img src="imgs/email.svg" alt=""></img>
-          <p>{data.email}</p>
+          <a style={{ color: '#444', textDecoration: 'none' }}
+            href={`mailto:${data.email}`}>{data.email}</a>
         </div>
 
         {
@@ -62,7 +63,12 @@ export const Header = () => {
         <p>
           {data.summaryTwo}
         </p>
-        <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
+
+        <p>
+          See more in my portfolio:
+          &nbsp;
+          <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
+        </p>
 
         <div className="header-links-container">
           <a href="https://github.com/roynx98">
@@ -71,10 +77,6 @@ export const Header = () => {
 
           <a href="https://www.linkedin.com/in/roy-rodriguez-7985a6172/">
             <img width="30px" src="imgs/linkedin.svg"></img>
-          </a>
-
-          <a href="https://twitter.com/roynx98">
-            <img width="30px" src="imgs/twitter.svg"></img>
           </a>
         </div>
 

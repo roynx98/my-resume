@@ -9,7 +9,7 @@ export const Experience = () => {
       company: 'Emap',
       period: 'Feb/2021 - Present',
       points: [
-        'Implement ad-related solutions on the Wall Street Journal site.',
+        'Implement ad-related solutions on the <b>Wall Street Journal</b> site.',
         'Build new features on using JS and React for Dow Jones.',
       ]
     },
@@ -21,7 +21,7 @@ export const Experience = () => {
       points: [
         'Developed and deployed a push notification newsletter app using Ionic and React.',
         'Build an app to measure the risk level of a route using React Native.',
-        'Implement an API rest to store GPS coordinates used by more 5,000 daily users.',
+        'Implement an API rest to store GPS coordinates used by more <b>5,000 daily users</b>.',
       ]
     },
     {
@@ -54,7 +54,7 @@ export const Experience = () => {
               <ul>
               {
                 item.points.map(point => 
-                  <li key={point}>{point}</li>
+                  <li key={point} dangerouslySetInnerHTML={{__html: point}}></li>
                 )
               }
               </ul>
