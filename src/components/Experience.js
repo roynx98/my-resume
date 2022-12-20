@@ -4,10 +4,19 @@ import './Experience.css'
 export const Experience = () => {
   const data = [
     {
+      img: 'imgs/caliente.png',
+      position: 'Developer',
+      company: 'Caliente',
+      period: 'Jul/2022 - Present',
+      points: [
+        'Refactored Mexico casino page from Backbone JS to React.'
+      ]
+    },
+    {
       img: 'imgs/epam.png',
       position: 'Senior Software Engineer',
       company: 'Emap',
-      period: 'Feb/2021 - Present',
+      period: 'Feb/2021 - Jul/2022',
       points: [
         'Implement ad-related solutions on the <b>Wall Street Journal</b> site.',
         'Build new features on using JS and React for Dow Jones.',
@@ -22,15 +31,6 @@ export const Experience = () => {
         'Developed and deployed a push notification newsletter app using Ionic and React.',
         'Build an app to measure the risk level of a route using React Native.',
         'Implement an API rest to store GPS coordinates used by more <b>5,000 daily users</b>.',
-      ]
-    },
-    {
-      img: 'imgs/yogome.png',
-      position: 'Game Developer Jr',
-      company: 'Yogome',
-      period: 'Sep/2018 - Oct/2018',
-      points: [
-        'Build multiple game prototypes for the Epic Heroes of Knowledge platform with Corona SDK.'
       ]
     },
   ];

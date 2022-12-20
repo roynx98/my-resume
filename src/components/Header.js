@@ -3,10 +3,13 @@ import './Header.css';
 import picture from './../imgs/picture.jpeg'
 import phoneLogo from '../imgs/phone.svg';
 
-const SHOW_PHONE = true;
-const SHOW_LOCATION = false;
+export const Header = (props) => {
+  const {
+    showPhone = false,
+    showLocation = false,
+    showPortfolio = false
+  } = props;
 
-export const Header = () => {
   const data = {
     name: 'Roy Rodriguez',
     role: 'Full-Stack Developer',
@@ -39,7 +42,7 @@ export const Header = () => {
         </div>
 
         {
-          SHOW_LOCATION &&
+          showLocation &&
           <div className="header-info-item">
             <img src="imgs/pin.svg" alt=""></img>
             <p>{data.location}</p>
@@ -47,7 +50,7 @@ export const Header = () => {
         }
 
         {
-          SHOW_PHONE &&
+          showLocation &&
           <div className="header-info-item">
             <img src={phoneLogo} alt=""></img>
             <p>{data.phoneNumber}</p>
@@ -64,11 +67,14 @@ export const Header = () => {
           {data.summaryTwo}
         </p>
 
-        <p>
-          See more in my portfolio:
-          &nbsp;
-          <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
-        </p>
+        {
+          showPortfolio &&
+          <p>
+            See more in my portfolio:
+            &nbsp;
+            <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
+          </p>
+        }
 
         <div className="header-links-container">
           <a href="https://github.com/roynx98">
