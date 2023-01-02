@@ -1,13 +1,11 @@
 import React from 'react';
 import './Header.css';
-import picture from './../imgs/picture.jpeg'
-import phoneLogo from '../imgs/phone.svg';
 
 export const Header = (props) => {
   const {
     showPhone = false,
     showLocation = false,
-    showPortfolio = false
+    showPortfolio = true
   } = props;
 
   const data = {
@@ -26,7 +24,7 @@ export const Header = (props) => {
       <div className="header-info-container">
         <img
           className="header-profile-picture"
-          src={picture}
+          src="imgs/picture.jpeg"
           alt=""></img>
         <h1>{data.name}</h1>
 
@@ -50,9 +48,9 @@ export const Header = (props) => {
         }
 
         {
-          showLocation &&
+          showPhone &&
           <div className="header-info-item">
-            <img src={phoneLogo} alt=""></img>
+            <img  src="imgs/pin.svg" alt=""></img>
             <p>{data.phoneNumber}</p>
           </div>
         }
@@ -70,9 +68,9 @@ export const Header = (props) => {
         {
           showPortfolio &&
           <p>
-            See more in my portfolio:
+            See more on my portfolio:
             &nbsp;
-            <a href="https://royrodriguez.net/">https://royrodriguez.net/</a>
+            <a href="https://royrodriguez.me">https://royrodriguez.me</a>
           </p>
         }
 
