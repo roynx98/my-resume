@@ -7,10 +7,9 @@ export const Skills = () => {
   ];
   const data = [
     {
-      title: 'Lenguages',
+      title: 'Programming',
       items: [
         { name: 'Javascript', img: 'imgs/js.svg'},
-        { name: 'Kotlin', img: 'imgs/kotlin.svg'},
         { name: 'Swift', img: 'imgs/swift.svg'}
       ]
     },
@@ -25,7 +24,7 @@ export const Skills = () => {
       ]
     },
     {
-      title: 'Idioms',
+      title: 'Languages',
       items: [
         { name: 'English', img: 'imgs/usa.svg'},
         { name: 'Spanish', img: 'imgs/spain.svg'}
