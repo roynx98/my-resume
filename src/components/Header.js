@@ -3,19 +3,19 @@ import './Header.css';
 
 export const Header = (props) => {
   const {
-    showPhone = false,
+    showPhone = true,
     showLocation = false,
-    showPortfolio = true
+    showPortfolio = false
   } = props;
 
-  const data = {
-    name: 'Roy Rodriguez',
-    role: 'Full-Stack Developer',
-    email: 'roynx98@gmail.com',
+const data = {
+    name: 'Elsa Citlali Ramírez Guillén',
+    role: 'Biologist / Data Scientist',
+    email: 'citlali.rgb@gmail.com',
     location: 'CDMX, Mexico',
-    phoneNumber: '55 8613 7990',
-    summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.',
-    summaryTwo: 'Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely.'
+    phoneNumber: '449 263 1943',
+    summary: "I am a biologist with a Master's degree in Data Science. I have skills in data analysis, modeling, and visualization. I am proficient in R, Python, and SQL.",
+    summaryTwo: 'Seeking challenging projects where I can apply my skills, either in the field of data analysis or in biology.'
   };
 
   return (
@@ -75,11 +75,7 @@ export const Header = (props) => {
         }
 
         <div className="header-links-container">
-          <a href="https://github.com/roynx98">
-            <img width="30px" src="imgs/github.svg"></img>
-          </a>
-
-          <a href="https://www.linkedin.com/in/roy-rodriguez-7985a6172/">
+          <a href="https://www.linkedin.com/in/elsa-citlali-ram%C3%ADrez-guill%C3%A9n-6b18561ab/">
             <img width="30px" src="imgs/linkedin.svg"></img>
           </a>
         </div>

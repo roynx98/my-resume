@@ -4,39 +4,27 @@ import './Experience.css'
 export const Experience = () => {
   const data = [
     {
-      img: 'imgs/caliente.png',
-      position: 'Developer',
-      company: 'Caliente',
-      period: 'Jul/2022 - Present',
+      img: 'imgs/ucjc.jpg',
+      position: 'Data Scientist',
+      company: 'Universidad Camilo José Cela',
+      period: 'Nov/2022 - Jul/2023',
       points: [
-        'Refactored Mexico casino page from Backbone JS to React.'
+        'Developed a deep learning model for a Primate Image Classifier using PyTorch with a Streamlit Web Application.'
       ]
     },
     {
-      img: 'imgs/epam.png',
-      position: 'Senior Software Engineer',
-      company: 'Emap',
-      period: 'Feb/2021 - Jul/2022',
+      img: 'imgs/inegi.png',
+      position: 'Data Scientist',
+      company: 'INEGI',
+      period: 'Feb/2023 - Jul/2023',
       points: [
-        'Implement ad-related solutions on the <b>Wall Street Journal</b> site.',
-        'Build new features on using JS and React for Dow Jones.',
+        'Internship at the INEGI Data Science Laboratory.'
       ]
-    },
-    {
-      img: 'imgs/ilsp.png',
-      position: 'Mobile Developer Sr',
-      company: 'ILSP',
-      period: 'Oct/2018 - Feb/2021',
-      points: [
-        'Developed and deployed a push notification newsletter app using Ionic and React.',
-        'Build an app to measure the risk level of a route using React Native.',
-        'Implement an API rest to store GPS coordinates used by more <b>5,000 daily users</b>.',
-      ]
-    },
+    }
   ];
   return (
     <div>
-      <h2>Work Experience</h2>
+      <h2>Experience</h2>
       <hr />
 
       {

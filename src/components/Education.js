@@ -3,12 +3,21 @@ import React from 'react';
 export const Education = () => {
   const data = [
     {
-      img: 'imgs/upa.jpeg',
-      position: 'Computer Systems Engineer',
-      university: 'Universidad Politécnica de Aguascalientes',
-      period: 'Oct/2014 - Sep/2018',
+      img: 'imgs/ucjc.jpg',
+      position: "Master's degree in Data Science",
+      university: 'Universidad Camilo José Cela, Madrid, España.',
+      period: 'Oct/2022 - Jul/2023',
       points: [
-        'Developed an app for taking skin photos and analyze them for cancer, through a neural network using python.'
+        "Master's program specializing in Data Analysis and Processing, with a focus on the practical application of Machine Learning, Deep Learning, and Natural Language Processing techniques for advanced data analytics."
+      ]
+    },
+    {
+      img: 'imgs/uaa.png',
+      position: "Bachelor's degree in Biology",
+      university: 'Universidad Autónoma de Aguascalientes, México.',
+      period: 'Oct/2017 - Sep/2022',
+      points: [
+        "Degree program with emphasis on statistical analysis and research methodologies."
       ]
     },
   ];

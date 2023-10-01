@@ -8,8 +8,3 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Resume />
 );
-
-// ReactDOM.render(
-//   <Resume />,
-//   document.getElementById('root')
-// );

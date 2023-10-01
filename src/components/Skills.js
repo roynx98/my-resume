@@ -3,24 +3,26 @@ import './Skills.css'
 
 export const Skills = () => {
   const sizes = [
-    120, 250, 100, 80
+    170, 230, 100, 100
   ];
   const data = [
     {
-      title: 'Programming',
+      title: 'Technical skills',
       items: [
-        { name: 'Javascript', img: 'imgs/js.svg'},
-        { name: 'Swift', img: 'imgs/swift.svg'}
+        { name: 'Python', img: 'imgs/python.svg'},
+        { name: 'R', img: 'imgs/r.png'},
+        { name: 'MySQL', img: 'imgs/mysql.svg'},
+        { name: 'PHP', img: 'imgs/php.svg'},
       ]
     },
     {
       title: 'Libraries/Frameworks',
       items: [
-        { name: 'React', img: 'imgs/react.svg' },
-        { name: 'Express', img: 'imgs/express.svg' },
-        { name: 'Jest', img: 'imgs/jest.svg' },
-        { name: 'React Native', img: 'imgs/reactNative.svg' },
-        { name: 'Ionic', img: 'imgs/ionic.png' },
+        { name: 'Seaborn', img: 'imgs/seaborn.svg' },
+        { name: 'Matplotlib', img: 'imgs/matplotlib.png' },
+        { name: 'Scikit-learn', img: 'imgs/scikit.svg' },
+        { name: 'Keras', img: 'imgs/keras.svg' },
+        { name: 'PyTorch', img: 'imgs/pytorch.svg' },
       ]
     },
     {
@@ -33,8 +35,8 @@ export const Skills = () => {
     {
       title: 'Tools',
       items: [
-        { name: 'Git', img: 'imgs/git.svg'},
-        { name: 'Xcode', img: 'imgs/xcode.svg'},
+        { name: 'Power BI', img: 'imgs/powerBi.svg'},
+        { name: 'Tableau', img: 'imgs/tableau.svg'},
       ]
     },
     

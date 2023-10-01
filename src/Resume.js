@@ -12,10 +12,10 @@ export const Resume = () => {
         <Header />
 
         <br />
-        <Experience />
+        <Skills />
 
         <br />
-        <Skills />
+        <Experience />
 
         <br />
         <Education />
