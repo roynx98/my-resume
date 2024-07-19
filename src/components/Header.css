@@ -1,10 +1,7 @@
 .header-profile-picture {
   width: 150px;
   height: 150px;
-  border-radius: 100px;
-  margin: 0 auto 0px auto;
-  position: relative;
-  right: 20px;
+  border-radius: 50%;
 }
 
 .header-container {
@@ -27,12 +24,12 @@
 .header-info-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   flex: 1;
 }
 
 .header-summary-container {
-  flex: 2;
+  flex: 2.2;
   display: flex;
   flex-direction: column;
 }

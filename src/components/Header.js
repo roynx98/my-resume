@@ -14,8 +14,12 @@ export const Header = (props) => {
     email: 'roynx98@gmail.com',
     location: 'CDMX, Mexico',
     phoneNumber: '55 8613 7990',
-    summary: 'I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps and games on my own, since then I have worked with many technologies, from game engines, JS frameworks to backend services.',
-    summaryTwo: 'Due to my previous experience, I will be able to provide high quality software. Willing and able to work remotely.'
+    info: () => (
+      <>
+        <p>I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps, since then I have worked with many technologies, from game engines, JS frameworks to backend services.</p>
+        <p>Due to my previous experience, I will be able to provide high quality software. Willing to work remotely.</p>
+      </>
+    ),
   };
 
   return (
@@ -50,7 +54,7 @@ export const Header = (props) => {
         {
           showPhone &&
           <div className="header-info-item">
-            <img  src="imgs/pin.svg" alt=""></img>
+            <img src="imgs/pin.svg" alt=""></img>
             <p>{data.phoneNumber}</p>
           </div>
         }
@@ -58,13 +62,7 @@ export const Header = (props) => {
       </div>
 
       <div className="header-summary-container">
-        <p>
-          {data.summary}
-        </p>
-        <p>
-          {data.summaryTwo}
-        </p>
-
+        <data.info />
         {
           showPortfolio &&
           <p>

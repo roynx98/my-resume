@@ -1,3 +1,7 @@
+.skills-title {
+  margin-bottom: 0;
+}
+
 .skills-section img {
   width: 20px;
 }
@@ -21,6 +25,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 0.7rem;
 }
 
 .skills-item {
@@ -29,7 +34,7 @@
 }
 
 .skills-item p {
-  margin-left: 10px;
+  margin: 0 0 0 10px;
 }
 
 .skills-container {

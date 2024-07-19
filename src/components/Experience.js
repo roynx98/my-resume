@@ -5,64 +5,59 @@ export const Experience = () => {
   const data = [
     {
       img: 'imgs/caliente.png',
-      position: 'Developer',
       company: 'Caliente',
       period: 'Jul/2022 - Present',
-      points: [
-        'Refactored Mexico casino page from Backbone JS to React.'
-      ]
+      description: () => (
+        <>
+          <p>I’m a front-end developer at Caliente. Using JavaScript, I’ve implemented features for the <b>largest online casino in Mexico.</b></p>
+          <p>In addition to developing new functionalities and fixing bugs, we are migrating old BackboneJS components to React.</p>
+        </>
+      ),
     },
     {
       img: 'imgs/epam.png',
-      position: 'Senior Software Engineer',
       company: 'Emap',
       period: 'Feb/2021 - Jul/2022',
-      points: [
-        'Implement ad-related solutions on the <b>Wall Street Journal</b> site.',
-        'Build new features on using JS and React for Dow Jones.',
-      ]
+      description: () => (
+        <>
+          <p>I was a Senior Software Developer at EMAP. My client was Dow Jones, I joined as part of the ad tech team.</p>
+          <p>We implemented ad-related features for sites like the <b>Wall Street Journal and MarketWatch, impacting millions of users and the company's revenue.</b></p>
+          <p>I worked in a JavaScript full-stack role, my tasks were from creating an LRU cache on our back-end to modifying the layouts for the ads on the client side.</p>
+        </>
+      ),
     },
     {
       img: 'imgs/ilsp.png',
-      position: 'Mobile Developer Sr',
       company: 'ILSP',
       period: 'Oct/2018 - Feb/2021',
-      points: [
-        'Developed and deployed a push notification newsletter app using Ionic and React.',
-        'Build an app to measure the risk level of a route using React Native.',
-        'Implement an API rest to store GPS coordinates used by more <b>5,000 daily users</b>.',
-      ]
+      description: () => (
+        <>
+          <p>I was a Senior Mobile Developer at ILSP,  I created several apps from scratch using native technologies and React.</p>
+          <p>One of these was a GPS logger called Follow, which kept track of <b>more than 5,000 vehicles</b>. Another app was a newsletter app that used notifications to keep users updated with the latest reports.</p>
+        </>
+      ),
     },
   ];
   return (
     <div>
       <h2>Work Experience</h2>
-      <hr />
 
-      {
-        data.map((item, index) => 
-          <div key={index} className="experience-item">
-            <img src={item.img} alt="Experince"></img>
+      <div className="experience-container">
+        {
+          data.map((item, index) =>
+            <div key={index} className="experience-item">
+              <div className="experience-icon">
+                <img src={item.img} alt="Experince"></img>
+                <p className="experience-item-info-period">{item.period}</p>
+              </div>
 
-            <div className="experience-item-info">
-              <h3>{item.position}</h3>
-              <h4>{item.company}</h4>
-              <p>{item.period}</p>
+              <div className="experience-item-description" >
+                <item.description />
+              </div>
             </div>
-
-            <div className="experience-item-points">
-              <ul>
-              {
-                item.points.map(point => 
-                  <li key={point} dangerouslySetInnerHTML={{__html: point}}></li>
-                )
-              }
-              </ul>
-            </div>
-          </div>
-        )
-      }
-
+          )
+        }
+      </div>
     </div>
   );
 };

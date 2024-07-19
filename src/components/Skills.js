@@ -9,8 +9,8 @@ export const Skills = () => {
     {
       title: 'Programming',
       items: [
-        { name: 'Javascript', img: 'imgs/js.svg'},
-        { name: 'Swift', img: 'imgs/swift.svg'}
+        { name: 'Javascript', img: 'imgs/js.svg' },
+        { name: 'Swift', img: 'imgs/swift.svg' }
       ]
     },
     {
@@ -20,38 +20,35 @@ export const Skills = () => {
         { name: 'Express', img: 'imgs/express.svg' },
         { name: 'Jest', img: 'imgs/jest.svg' },
         { name: 'React Native', img: 'imgs/reactNative.svg' },
-        { name: 'Ionic', img: 'imgs/ionic.png' },
       ]
     },
     {
       title: 'Languages',
       items: [
-        { name: 'English', img: 'imgs/usa.svg'},
-        { name: 'Spanish', img: 'imgs/spain.svg'}
+        { name: 'English', img: 'imgs/usa.svg' },
+        { name: 'Spanish', img: 'imgs/spain.svg' }
       ]
     },
     {
       title: 'Tools',
       items: [
-        { name: 'Git', img: 'imgs/git.svg'},
-        { name: 'Xcode', img: 'imgs/xcode.svg'},
+        { name: 'Git', img: 'imgs/git.svg' },
+        { name: 'Xcode', img: 'imgs/xcode.svg' },
       ]
     },
-    
+
   ];
   return (
     <div>
-      <h2>Skills</h2>
-      <hr />
-
+      <h2 className="skills-title">Skills</h2>
       <div className="skills-container">
         {
-          data.map((skill, i) => 
-            <div key={i} style={{flexGrow: 1}}>
+          data.map((skill, i) =>
+            <div key={i} style={{ flexGrow: 1 }}>
               <h3>{skill.title}</h3>
-              <div className="skills-section" style={{width: sizes[i]}}>
+              <div className="skills-section" style={{ width: sizes[i] }}>
                 {
-                  skill.items.map((item, j) => 
+                  skill.items.map((item, j) =>
                     <div key={j} className="skills-item">
                       <img src={item.img}></img>
                       <p>{item.name}</p>

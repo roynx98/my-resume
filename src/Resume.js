@@ -10,16 +10,11 @@ export const Resume = () => {
     <div className="resume-container">
       <div style={{padding: "40px"}}>
         <Header />
+        <hr />
 
-        <br />
         <Experience />
 
-        <br />
         <Skills />
-
-        <br />
-        <Education />
-
       </div>
     </div>
   );
