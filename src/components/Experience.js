@@ -9,7 +9,7 @@ export const Experience = () => {
       period: 'Jul/2022 - Present',
       description: () => (
         <>
-          <p>I’m a front-end developer at Caliente. Using JavaScript, I’ve implemented features for the <b>largest online casino in Mexico.</b></p>
+          <p>I’m a front-end developer at Caliente. Using React, I’ve implemented features for the <b>largest online casino in Mexico.</b></p>
           <p>In addition to developing new functionalities and fixing bugs, we are migrating old BackboneJS components to React.</p>
         </>
       ),
@@ -22,7 +22,7 @@ export const Experience = () => {
         <>
           <p>I was a Senior Software Developer at EMAP. My client was Dow Jones, I joined as part of the ad tech team.</p>
           <p>We implemented ad-related features for sites like the <b>Wall Street Journal and MarketWatch, impacting millions of users and the company's revenue.</b></p>
-          <p>I worked in a JavaScript full-stack role, my tasks were from creating an LRU cache on our back-end to modifying the layouts for the ads on the client side.</p>
+          <p>I worked in a JavaScript full-stack role, my tasks vary from creating an LRU cache on our back-end to modifying the layouts for the ads on the client side with React.</p>
         </>
       ),
     },
@@ -32,7 +32,7 @@ export const Experience = () => {
       period: 'Oct/2018 - Feb/2021',
       description: () => (
         <>
-          <p>I was a Senior Mobile Developer at ILSP,  I created several apps from scratch using native technologies and React.</p>
+          <p>I was a Senior Mobile Developer at ILSP,  I created several apps from scratch using React Native.</p>
           <p>One of these was a GPS logger called Follow, which kept track of <b>more than 5,000 vehicles</b>. Another app was a newsletter app that used notifications to keep users updated with the latest reports.</p>
         </>
       ),

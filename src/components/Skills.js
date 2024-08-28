@@ -7,33 +7,26 @@ export const Skills = () => {
   ];
   const data = [
     {
-      title: 'Programming',
+      title: 'Languages',
       items: [
         { name: 'Javascript', img: 'imgs/js.svg' },
-        { name: 'Swift', img: 'imgs/swift.svg' }
+        { name: 'CSS', img: 'imgs/css.svg' },
+        { name: 'Typescript', img: 'imgs/swift.svg' }
       ]
     },
     {
       title: 'Libraries/Frameworks',
       items: [
-        { name: 'React', img: 'imgs/react.svg' },
-        { name: 'Express', img: 'imgs/express.svg' },
-        { name: 'Jest', img: 'imgs/jest.svg' },
-        { name: 'React Native', img: 'imgs/reactNative.svg' },
-      ]
-    },
-    {
-      title: 'Languages',
-      items: [
-        { name: 'English', img: 'imgs/usa.svg' },
-        { name: 'Spanish', img: 'imgs/spain.svg' }
+        { name: 'React / React Native', img: 'imgs/react.svg' },
+        { name: 'Next.js', img: 'imgs/next-js.svg' },
+        { name: 'Expo', img: 'imgs/expo.jpg' },
       ]
     },
     {
       title: 'Tools',
       items: [
         { name: 'Git', img: 'imgs/git.svg' },
-        { name: 'Xcode', img: 'imgs/xcode.svg' },
+        { name: 'VS Code', img: 'imgs/vscode.png' },
       ]
     },
 
