@@ -4,12 +4,12 @@ import './Experience.css'
 export const Experience = () => {
   const data = [
     {
-      img: 'imgs/ucjc.jpg',
-      position: 'Data Scientist',
-      company: 'Universidad Camilo José Cela',
-      period: 'Nov/2022 - Jul/2023',
+      img: 'imgs/easyload.jpeg',
+      position: 'Web Developer',
+      company: 'APP Administración en Tecnología (EasyLoad)',
+      period: 'Nov/2023 - Present',
       points: [
-        'Developed a deep learning model for a Primate Image Classifier using PyTorch with a Streamlit Web Application.'
+        'Development and maintenance of EasyLoad.'
       ]
     },
     {
