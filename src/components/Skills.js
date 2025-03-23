@@ -10,23 +10,23 @@ export const Skills = () => {
       title: 'Languages',
       items: [
         { name: 'Javascript', img: 'imgs/js.svg' },
-        { name: 'CSS', img: 'imgs/css.svg' },
         { name: 'Typescript', img: 'imgs/swift.svg' }
       ]
     },
     {
       title: 'Libraries/Frameworks',
       items: [
-        { name: 'React / React Native', img: 'imgs/react.svg' },
-        { name: 'Next.js', img: 'imgs/next-js.svg' },
-        { name: 'Expo', img: 'imgs/expo.jpg' },
+        { name: 'Node', img: 'imgs/next-js.svg' },
+        { name: 'React', img: 'imgs/react.svg' },
       ]
     },
     {
       title: 'Tools',
       items: [
         { name: 'Git', img: 'imgs/git.svg' },
-        { name: 'VS Code', img: 'imgs/vscode.png' },
+        { name: 'AWS', img: 'imgs/aws.png' },
+        { name: 'Docker', img: 'imgs/docker.png' },
+        { name: 'PostgreSQL', img: 'imgs/postgres.png' },
       ]
     },
 

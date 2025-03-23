@@ -2,88 +2,51 @@ import React from 'react';
 import './Header.css';
 
 export const Header = (props) => {
-  const {
-    showPhone = false,
-    showLocation = false,
-    showPortfolio = true
-  } = props;
-
   const data = {
     name: 'Roy Rodriguez',
-    role: 'Full-Stack Developer',
+    role: 'Senior Full-Stack Developer',
+    links: [
+      { url: 'https://github.com/roynx98', icon: 'imgs/github.svg', label: 'github.com/roynx98' },
+      { url: 'https://royrodriguez.me/', icon: 'imgs/portfolio.svg', label: 'royrodriguez.me' },
+      { url: 'mailto:roynx98@gmail.com', icon: 'imgs/email.svg', label: 'roynx98@gmail.com' },
+      { url: 'https://www.linkedin.com/in/roy-rodriguez-7985a6172/', icon: 'imgs/linkedin.svg', label: 'LinkedIn' },
+    ],
     email: 'roynx98@gmail.com',
-    location: 'CDMX, Mexico',
-    phoneNumber: '55 8613 7990',
+    github: 'github.com/roynx98',
+    linkedin: 'linkedin.com/in/roy-rodriguez-7985a6172',
     info: () => (
       <>
-        <p>I am a software developer with a passion for learning and problem solving. I started my development journey making mobile apps, since then I have worked with many technologies, from game engines, JS frameworks to backend services.</p>
-        <p>Due to my previous experience, I will be able to provide high quality software. Willing to work remotely.</p>
+        <p>Experienced in building scalable and high-quality software solutions, with a strong passion for system design, algorithms, and data structures.</p>
+        <p>With 7+ years of experience, I specialize in delivering robust and efficient software solutions. Open to remote opportunities.</p>
       </>
     ),
   };
 
   return (
     <div className="header-container">
-
-      <div className="header-info-container">
+      <div className='header-info-container'>
         <img
           className="header-profile-picture"
-          src="imgs/picture.jpeg"
-          alt=""></img>
-        <h1>{data.name}</h1>
+          src="imgs/avatar.jpg"
+          alt="Avatar"></img>
 
-        <div className="header-info-item">
-          <img src="imgs/star.svg" alt=""></img>
-          <p>{data.role}</p>
+        <div className='header-info-text'>
+          <p className='header-info-name'>{data.name}</p>
+          <p className='header-info-role'>{data.role}</p>
+          <data.info />
         </div>
-
-        <div className="header-info-item">
-          <img src="imgs/email.svg" alt=""></img>
-          <a style={{ color: '#444', textDecoration: 'none' }}
-            href={`mailto:${data.email}`}>{data.email}</a>
-        </div>
-
-        {
-          showLocation &&
-          <div className="header-info-item">
-            <img src="imgs/pin.svg" alt=""></img>
-            <p>{data.location}</p>
-          </div>
-        }
-
-        {
-          showPhone &&
-          <div className="header-info-item">
-            <img src="imgs/pin.svg" alt=""></img>
-            <p>{data.phoneNumber}</p>
-          </div>
-        }
-
       </div>
 
-      <div className="header-summary-container">
-        <data.info />
+      <div className='header-info-links'>
         {
-          showPortfolio &&
-          <p>
-            See more on my portfolio:
-            &nbsp;
-            <a href="https://royrodriguez.me">https://royrodriguez.me</a>
-          </p>
+          data.links.map((link) => (
+            <a className="header-info-link" key={link.url} href={link.url}>
+              <img src={link.icon} alt=""/>
+              <span>{link.label ?? link.url}</span>
+            </a>
+          ))
         }
-
-        <div className="header-links-container">
-          <a href="https://github.com/roynx98">
-            <img width="30px" src="imgs/github.svg"></img>
-          </a>
-
-          <a href="https://www.linkedin.com/in/roy-rodriguez-7985a6172/">
-            <img width="30px" src="imgs/linkedin.svg"></img>
-          </a>
-        </div>
-
       </div>
-
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Education } from './components/Education';
 import { Experience } from './components/Experience';
 import { Header } from './components/Header';
 import { Skills } from './components/Skills';
@@ -10,7 +9,6 @@ export const Resume = () => {
     <div className="resume-container">
       <div style={{padding: "40px"}}>
         <Header />
-        <hr />
 
         <Experience />
 
