@@ -17,7 +17,7 @@ export const Header = (props) => {
     info: () => (
       <>
         <p>Experienced in building scalable and high-quality software solutions, with a strong passion for system design, algorithms, and data structures.</p>
-        <p>With 7+ years of experience, I specialize in delivering robust and efficient software solutions. Open to remote opportunities.</p>
+        <p>With 6+ years of experience, I specialize in delivering robust and efficient software solutions. Open to remote opportunities.</p>
       </>
     ),
   };

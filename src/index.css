@@ -39,3 +39,7 @@ a:link {
 a:visited {
   color: #4ec2e7;
 }
+
+b {
+  font-weight: 500;
+}

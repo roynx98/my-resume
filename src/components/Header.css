@@ -20,14 +20,14 @@
 
   .header-info-role {
     color: rgb(103, 103, 103);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.2rem;
   }
 }
 
 .header-info-links {
-  border-top: 1px solid #ccc;
   border-bottom: 1px solid  #ccc;;
+  border-top: 1px solid  #ccc;;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@
 
 .header-info-link {
   display: flex;
-  gap: 4px;
+  gap: 8px;
 
   img {
     width: 20px;

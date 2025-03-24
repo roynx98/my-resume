@@ -6,41 +6,56 @@ export const Experience = () => {
     {
       img: 'imgs/caliente.png',
       company: 'Caliente',
+      role: 'Front-end Developer',
       period: 'Jul/2022 - Present',
       description: () => (
         <>
-          <p>I’m a developer at Caliente. Using React, I’ve implemented features for the <b>largest online casino in Mexico.</b></p>
-          <p>In addition to developing new functionalities and fixing bugs, we are migrating old BackboneJS components.</p>
+          <p className='experience-item-title'>I'm a Front-End Developer at Caliente, the largest online casino in Mexico.</p>
+          <ul>
+            <li>Refactored casino UI widgets from BackboneJS to <b>React</b>, modernizing the codebase and enhancing maintainability.</li>
+            <li>Integrated the SpinPremia payment method to improve transaction success rates and expand coverage.</li>
+            <li>Optimized the game filtering algorithm, reducing complexity and <b>improving casino loading time by 20%</b>.</li>
+            <li>Integrated <b>WebSocket API</b> connection to enable real-time updates on the casino homepage.</li>
+          </ul>
         </>
       ),
     },
     {
       img: 'imgs/epam.png',
       company: 'Emap',
+      role: 'Full Stack Developer',
       period: 'Feb/2021 - Jul/2022',
       description: () => (
         <>
-          <p>I was a Senior Software Developer at EMAP. My client was Dow Jones, I joined as part of the ad tech team.</p>
-          <p>We implemented ad-related features for sites like the <b>Wall Street Journal and MarketWatch, impacting millions of users and the company's revenue.</b></p>
-          <p>I worked in a JavaScript full-stack role, my tasks vary from creating an LRU cache on our NodeJS back-end to creating API services for AB testing.</p>
+          <p className='experience-item-title'>I was a Senior Software Developer at EMAP, working with Dow Jones as part of the ad tech team.</p>
+          <ul>
+            <li>Implemented ad-related features for major platforms like <b>The Wall Street Journal and MarketWatch</b>, impacting millions of users and significantly contributing to company revenue.</li>
+            <li>Developed an LRU cache for a <b>Node.js</b> service for ad segmentation, <b>improving the API response time by 10%</b>.</li>
+            <li>Created an <b>AWS</b> service to collect and analyze ad-related telemetry metrics.</li>
+          </ul>
         </>
       ),
     },
     {
       img: 'imgs/ilsp.png',
       company: 'ILSP',
+      role: 'Full Stack Developer',
       period: 'Oct/2018 - Feb/2021',
       description: () => (
         <>
-          <p>I was a Senior Mobile Developer at ILSP, I created several apps from scratch using React Native.</p>
-          <p>One of these was a GPS logger called Follow, which kept track of <b>more than 5,000 vehicles</b>. Another app was a newsletter app that used notifications to keep users updated with the latest reports.</p>
+          <p className='experience-item-title'>I was a Senior Developer at ILSP, focusing on mobile app and API development.</p>
+          <ul>
+            <li>Developed a mobile GPS logger app using native iOS and Android SDKs, <b>tracking over 5,000 vehicles.</b></li>
+            <li>Created a <b>microservice</b> to handle GPS logs for the mobile app, using <b>RabbitMQ</b> to communicate with other services.</li>
+            <li>Developed a newsletter mobile app with <b>React Native</b> that leveraged notifications to keep users informed with the latest security reports.</li>
+          </ul>
         </>
       ),
     },
   ];
   return (
     <div>
-      <h2>Work Experience</h2>
+      <h2 className='experience-title'>Work Experience</h2>
 
       <div className="experience-container">
         {
