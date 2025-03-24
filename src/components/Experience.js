@@ -5,8 +5,6 @@ export const Experience = () => {
   const data = [
     {
       img: 'imgs/caliente.png',
-      company: 'Caliente',
-      role: 'Front-end Developer',
       period: 'Jul/2022 - Present',
       description: () => (
         <>
@@ -22,8 +20,6 @@ export const Experience = () => {
     },
     {
       img: 'imgs/epam.png',
-      company: 'Emap',
-      role: 'Full Stack Developer',
       period: 'Feb/2021 - Jul/2022',
       description: () => (
         <>
@@ -38,12 +34,10 @@ export const Experience = () => {
     },
     {
       img: 'imgs/ilsp.png',
-      company: 'ILSP',
-      role: 'Full Stack Developer',
       period: 'Oct/2018 - Feb/2021',
       description: () => (
         <>
-          <p className='experience-item-title'>I was a Senior Developer at ILSP, focusing on mobile app and API development.</p>
+          <p className='experience-item-title'>I was a Senior Developer at iLSP, focusing on mobile app and API development.</p>
           <ul>
             <li>Developed a mobile GPS logger app using native iOS and Android SDKs, <b>tracking over 5,000 vehicles.</b></li>
             <li>Created a <b>microservice</b> to handle GPS logs for the mobile app, using <b>RabbitMQ</b> to communicate with other services.</li>
@@ -52,20 +46,30 @@ export const Experience = () => {
         </>
       ),
     },
+    {
+      img: 'imgs/personal.webp',
+      description: () => (
+        <>
+          <p className='experience-item-title'>Open Source Projects</p>
+          <ul>
+            <li>Dreadnought (<a href='https://github.com/roynx98/dreadnought'>github.com/roynx98/dreadnought</a>): A rate limiter implemented as a reverse proxy in <b>Go</b>. It follows a <b>clean architecture</b>, making it easy to maintain, scale and extend.</li> 
+            <li>Transition Button Android (<a href='https://github.com/roynx98/transition-button-android'>github.com/roynx98/transition-button-android</a>): A button for Android that supports several transition animations. It has <b>more than 150 stars on GitHub</b>.</li>
+          </ul>
+        </>
+      ),
+    },
   ];
   return (
     <div>
-      <h2 className='experience-title'>Work Experience</h2>
-
+      <h2 className='experience-title'>Experience</h2>
       <div className="experience-container">
         {
           data.map((item, index) =>
             <div key={index} className="experience-item">
               <div className="experience-icon">
                 <img src={item.img} alt="Experince"></img>
-                <p className="experience-item-info-period">{item.period}</p>
+                {item.period && <p className="experience-item-info-period">{item.period}</p>}
               </div>
-
               <div className="experience-item-description" >
                 <item.description />
               </div>

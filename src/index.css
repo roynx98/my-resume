@@ -32,6 +32,10 @@ html {
   color: #444;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:link {
   color: #4ec2e7;
 }
@@ -42,4 +46,8 @@ a:visited {
 
 b {
   font-weight: 500;
+}
+
+li {
+  margin-bottom: 0.3rem;
 }
