@@ -23,7 +23,7 @@ export const Experience = () => {
       period: 'Feb/2021 - Jul/2022',
       description: () => (
         <>
-          <p className='experience-item-title'>I was a Senior Software Developer at EMAP, working with Dow Jones as part of the ad tech team.</p>
+          <p className='experience-item-title'>I was a Senior Software Developer at EPAM, working with Dow Jones as part of the ad tech team.</p>
           <ul>
             <li>Implemented ad-related features for major platforms like <b>The Wall Street Journal and MarketWatch</b>, impacting millions of users and significantly contributing to company revenue.</li>
             <li>Developed an LRU cache for a <b>Node.js</b> service for ad segmentation, <b>improving the API response time by 10%</b>.</li>
@@ -42,18 +42,6 @@ export const Experience = () => {
             <li>Developed a mobile GPS logger app using native iOS and Android SDKs, <b>tracking over 5,000 vehicles.</b></li>
             <li>Created a <b>microservice</b> to handle GPS logs for the mobile app, using <b>RabbitMQ</b> to communicate with other services.</li>
             <li>Developed a newsletter mobile app with <b>React Native</b> that leveraged notifications to keep users informed with the latest security reports.</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      img: 'imgs/personal.webp',
-      description: () => (
-        <>
-          <p className='experience-item-title'>Open Source Projects</p>
-          <ul>
-            <li>Dreadnought (<a href='https://github.com/roynx98/dreadnought'>github.com/roynx98/dreadnought</a>): A rate limiter implemented as a reverse proxy in <b>Go</b>. It follows a <b>clean architecture</b>, making it easy to maintain, scale and extend.</li> 
-            <li>Transition Button Android (<a href='https://github.com/roynx98/transition-button-android'>github.com/roynx98/transition-button-android</a>): A button for Android that supports several transition animations. It has <b>more than 150 stars on GitHub</b>.</li>
           </ul>
         </>
       ),
