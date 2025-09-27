@@ -8,7 +8,7 @@ export const Experience = () => {
       period: 'Jul/2022 - Present',
       description: () => (
         <>
-          <p className='experience-item-title'>I'm a Front-End Developer at Caliente, the largest online casino in Mexico.</p>
+          <p className='experience-item-title'>I'm a Senior Developer at Caliente, the largest online casino in Mexico.</p>
           <ul>
             <li>Refactored casino UI widgets from BackboneJS to <b>React</b>, modernizing the codebase and enhancing maintainability.</li>
             <li>Integrated the SpinPremia payment method to improve transaction success rates and expand coverage.</li>
