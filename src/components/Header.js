@@ -4,7 +4,7 @@ import './Header.css';
 export const Header = (props) => {
   const data = {
     name: 'Roy Rodriguez',
-    role: 'Senior Full-Stack Developer',
+    role: 'AI Automation Specialist',
     links: [
       { url: 'https://github.com/roynx98', icon: 'imgs/github.svg', label: 'github.com/roynx98' },
       { url: 'https://royrodriguez.me/', icon: 'imgs/portfolio.svg', label: 'royrodriguez.me' },
@@ -16,8 +16,8 @@ export const Header = (props) => {
     linkedin: 'linkedin.com/in/roy-rodriguez-7985a6172',
     info: () => (
       <>
-        <p>Experienced in building scalable and high-quality software solutions, with a strong passion for system design, algorithms, and data structures.</p>
-        <p>With 6+ years of experience, I specialize in delivering robust and efficient software solutions. Open to remote opportunities.</p>
+        <p>With over 6 years of software development experience and a strong full stack background, I now focus on creating intelligent flows.</p>
+        <p>I bring expertise in designing scalable, high-quality automations, with a strong passion for streamlining systems, optimizing processes, and applying algorithms and data structures to intelligent flow design.</p>
       </>
     ),
   };

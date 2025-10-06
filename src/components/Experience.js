@@ -3,6 +3,33 @@ import './Experience.css'
 
 export const Experience = () => {
   const data = [
+      {
+      img: 'imgs/upwork.svg',
+      period: 'Jul/2024 - Present',
+      description: () => (
+        <>
+          <p className='experience-item-title'>AI Automation Consultant</p>
+          <ul>
+            <li>Outsourced Scale (Automation Agency)
+              <ul>
+                <li>Implemented a <b>bot</b> using <b>Custom GPTs</b> on <b>n8n</b> that interviews company owners about their pain points. The agent then generates an automation plan, sends it to the user, and creates Trello cards for the team to begin work.</li>
+                <li>Built an <b>n8n flow</b> to <b>generate leads</b> from Upwork and Indeed. An <b>LLM</b> analyzes job posts to detect companies and contacts, enabling the launch of <b>marketing campaigns</b> in <b>GoHighLevel CRM</b>.</li>
+              </ul>
+            </li>
+            <li>GitLaw (Legal Tech Startup)
+              <ul>
+                <li>Developed an <b>n8n workflow</b> that <b>scrapes</b> legal documents from the web, intelligently detects changes, and <b>sends email</b> notifications when updates occur.</li>
+              </ul>
+            </li>
+            <li>Barbershop
+              <ul>
+                <li>Created a <b>voice agent</b> for inbound calls to book appointments using <b>Rettell AI</b> and <b>Twilio</b>.</li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
     {
       img: 'imgs/caliente.png',
       period: 'Jul/2022 - Present',
@@ -31,21 +58,7 @@ export const Experience = () => {
           </ul>
         </>
       ),
-    },
-    {
-      img: 'imgs/ilsp.png',
-      period: 'Oct/2018 - Feb/2021',
-      description: () => (
-        <>
-          <p className='experience-item-title'>I was a Senior Developer at iLSP, focusing on mobile app and API development.</p>
-          <ul>
-            <li>Developed a mobile GPS logger app using native iOS and Android SDKs, <b>tracking over 5,000 vehicles.</b></li>
-            <li>Created a <b>microservice</b> to handle GPS logs for the mobile app, using <b>RabbitMQ</b> to communicate with other services.</li>
-            <li>Developed a newsletter mobile app with <b>React Native</b> that leveraged notifications to keep users informed with the latest security reports.</li>
-          </ul>
-        </>
-      ),
-    },
+    }
   ];
   return (
     <div>

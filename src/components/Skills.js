@@ -3,11 +3,10 @@ import './Skills.css'
 
 export const Skills = () => {
   const skills = [
-    { name: 'Javascript', img: 'imgs/js.svg' },
-    { name: 'Typescript', img: 'imgs/typescript.png' },
-    { name: 'Node', img: 'imgs/next-js.svg' },
+    { name: 'n8n', img: 'imgs/n8n.png' },
+    { name: 'OpenAI', img: 'imgs/openai.svg' },
+    { name: 'Node.js', img: 'imgs/next-js.svg' },
     { name: 'React', img: 'imgs/react.svg' },
-    { name: 'Git', img: 'imgs/git.svg' },
     { name: 'AWS', img: 'imgs/aws.png' },
     { name: 'Docker', img: 'imgs/docker.png' },
   ];
