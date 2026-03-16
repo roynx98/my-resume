@@ -6,10 +6,24 @@
   }
 }
 
+.experience-item-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.1rem 0;
+}
+
+.experience-item-subtitle {
+  color: rgb(130, 130, 130);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0 0 0.2rem 0;
+}
+
 .experience-item-title {
   color: rgb(103, 103, 103);
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin: 0 0 0.4rem 0;
 }
 
 .experience-item:last-child {

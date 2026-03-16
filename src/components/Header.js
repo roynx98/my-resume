@@ -4,7 +4,7 @@ import './Header.css';
 export const Header = (props) => {
   const data = {
     name: 'Roy Rodriguez',
-    role: 'Senior Full-Stack Developer',
+    role: 'Senior Full Stack Developer',
     links: [
       { url: 'https://github.com/roynx98', icon: 'imgs/github.svg', label: 'github.com/roynx98' },
       { url: 'https://royrodriguez.me/', icon: 'imgs/portfolio.svg', label: 'royrodriguez.me' },
@@ -17,7 +17,7 @@ export const Header = (props) => {
     info: () => (
       <>
         <p>Experienced in building scalable and high-quality software solutions, with a strong passion for system design, algorithms, and data structures.</p>
-        <p>With 6+ years of experience, I specialize in delivering robust and efficient software solutions. Open to remote opportunities.</p>
+        <p>With 8+ years of experience, I specialize in delivering robust and efficient software solutions. Leveraging <b>AI Tools</b> like Claude Code to boost performance and productivity.</p>
       </>
     ),
   };
@@ -31,8 +31,8 @@ export const Header = (props) => {
           alt="Avatar"></img>
 
         <div className='header-info-text'>
-          <p className='header-info-name'>{data.name}</p>
-          <p className='header-info-role'>{data.role}</p>
+          <h1 className='header-info-name'>{data.name}</h1>
+          <h2 className='header-info-role'>{data.role}</h2>
           <data.info />
         </div>
       </div>
