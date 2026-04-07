@@ -25,6 +25,7 @@ export const Experience = () => {
       bullets: [
         <>Implemented ad-related features for major platforms like <b>The Wall Street Journal and MarketWatch</b>, impacting millions of users and significantly contributing to company revenue.</>,
         <>Developed an LRU cache for a <b>Node.js</b> service for ad segmentation, <b>improving the API response time by 10%</b>.</>,
+        <>Implement server side rendering for React component to display ads on the Wall Street Journal site</>,
         <>Created an <b>AWS</b> service to collect and analyze ad-related telemetry metrics.</>,
       ],
     },

@@ -48,6 +48,18 @@
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .header-info-container {
+    flex-direction: column;
+  }
+
+  .header-info-links {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem 0;
+  }
+}
+
 .header-info-link {
   display: flex;
   gap: 8px;
